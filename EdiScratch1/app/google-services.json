@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "321212099264",
+    "project_id": "firestoredemo1-15c9a",
+    "storage_bucket": "firestoredemo1-15c9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321212099264:android:06548139461505ff519b25",
+        "android_client_info": {
+          "package_name": "com.example.ediscratch1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321212099264-hq7k32m3pfqipucisa6a65ofgvsjf5tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABihsPCT48D6R6e43NjOxKDnEkxC5VumQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321212099264-hq7k32m3pfqipucisa6a65ofgvsjf5tu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321212099264:android:7ccdf687f9f54029519b25",
+        "android_client_info": {
+          "package_name": "com.example.firestoreadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321212099264-hq7k32m3pfqipucisa6a65ofgvsjf5tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABihsPCT48D6R6e43NjOxKDnEkxC5VumQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321212099264-hq7k32m3pfqipucisa6a65ofgvsjf5tu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321212099264:android:8843bedbd850ab4f519b25",
+        "android_client_info": {
+          "package_name": "com.example.firestoredemo1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321212099264-485eorr1f35a9ihuj6sbjmcgui6jg688.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firestoredemo1",
+            "certificate_hash": "5b63c99c3284ac2b0153c72686716956140d14cc"
+          }
+        },
+        {
+          "client_id": "321212099264-hq7k32m3pfqipucisa6a65ofgvsjf5tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABihsPCT48D6R6e43NjOxKDnEkxC5VumQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321212099264-hq7k32m3pfqipucisa6a65ofgvsjf5tu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

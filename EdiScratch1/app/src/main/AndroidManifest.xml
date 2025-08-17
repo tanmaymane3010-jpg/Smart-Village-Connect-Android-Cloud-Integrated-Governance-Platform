@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ediscratch1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="EDIScratch"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Firestoredemo1">
+        <activity
+            android:name=".ShowImage"
+            android:exported="true" />
+        <activity
+            android:name=".GlobalMessagesNew"
+            android:exported="true" />
+        <activity
+            android:name=".AdminGlobalMessages"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LocalMessagesNew"
+            android:exported="true" />
+        <activity
+            android:name=".AdminLocalMessages"
+            android:exported="true" />
+
+        <activity
+            android:name=".DocumentCompleted"
+            android:exported="true" />
+        <activity
+            android:name=".DocumentInProgress"
+            android:exported="true" />
+        <activity
+            android:name=".ComplaintsCompleted"
+            android:exported="true" />
+        <activity
+            android:name=".InProgress"
+            android:exported="true" />
+
+        <activity
+            android:name=".GlobalMessages"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LocalMessages"
+            android:exported="true" />
+    </application>
+
+</manifest>

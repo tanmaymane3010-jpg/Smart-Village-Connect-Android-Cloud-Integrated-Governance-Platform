@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/local_messages_border"
+    android:layout_margin="10dp"
+    tools:context=".AdminGlobalMessages">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/local_messages_border"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/upper_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:baselineAligned="false">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/autour_one"
+                        android:paddingTop="10dp"
+                        android:paddingStart="5dp"
+                        android:paddingBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Occasional Post"
+                        android:textAlignment="textStart"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="100dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="0dp"
+
+                        >
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#FFFFFF" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/local_messages_text_border"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Admin_Global_Title1"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:hint="Title"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textAlignment="textStart"
+                            android:textColor="#000000"
+                            android:textAllCaps="false"
+                            android:textSize="15sp" />
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="0dp"
+                            >
+
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+
+                                >
+
+                                <ImageView
+                                    android:id="@+id/Admin_Global_ImageView1"
+                                    android:layout_width="180dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/ic_image_background" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:paddingStart="5dp"
+
+                                android:orientation="vertical">
+
+
+
+
+
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/Admin_Global_Description1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="Discription"
+                            android:layout_marginBottom="20dp"
+                            android:background="@color/white"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+
+                        <TextView
+                            android:id="@+id/Admin_Global_DateTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:padding="10dp"
+                            android:text="Monday, 14-12-2021"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+
+
+                    <Button
+                        android:id="@+id/Admin_Global_DeletePost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="#FFC107"
+                        android:clickable="true"
+                        android:elevation="10dp"
+                        android:focusable="true"
+                        android:text="Delete Post"
+
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

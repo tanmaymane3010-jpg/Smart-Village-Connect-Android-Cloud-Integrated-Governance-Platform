@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="#DEDEDE"
+    android:layout_margin="20dp"
+    tools:context=".DocumentInProgress">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DEDEDE"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/upper_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:baselineAligned="false">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/name_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:strokeColor="#FFC107"
+                        app:strokeWidth="1dp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_name1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:id="@+id/ward_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Ward"
+                            android:textAlignment="center"
+
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/input_ward1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/ward_box"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/phone_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Phone"
+                            android:textAlignment="center"
+
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/input_phone1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/phone_box"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/Address_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Current Address"
+                            android:textAlignment="center"
+
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/input_address1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/Address_box"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/Document_type_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Requested Document"
+                            android:textAlignment="center"
+
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/input_documents1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/Document_type_box"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/layout_2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/layout_1"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="50dp"-->
+<!--                android:layout_marginBottom="10dp">-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="3dp">-->
+
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+
+<!--                        >-->
+
+
+<!--                        <Button-->
+<!--                            android:id="@+id/btn_document_completed"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:backgroundTint="#E1AD01"-->
+<!--                            android:drawableTint="@color/white"-->
+<!--                            android:elevation="10dp"-->
+<!--                            android:text="Request Accepted"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textSize="12sp" />-->
+
+
+<!--                    </RelativeLayout>-->
+
+
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upper_layout"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/bottom_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#909090"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#FFFFFF"
+
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_date_time1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:padding="10dp"
+                            android:text="Monday, 14-12-2021"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="15sp" />
+
+
+                        <!--                        <com.google.android.material.card.MaterialCardView-->
+                        <!--                            android:id="@+id/card_number"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            app:strokeWidth="1dp"-->
+                        <!--                            android:layout_marginStart="5dp"-->
+                        <!--                            android:layout_margin="5dp"-->
+                        <!--                            android:backgroundTint="@color/transparent"-->
+                        <!--                            android:layout_alignParentStart="true"-->
+                        <!--                            app:strokeColor="#FFFFFF"-->
+                        <!--                            >-->
+
+                        <!--                            <TextView-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:id="@+id/txt_card_number"-->
+                        <!--                                android:layout_alignParentStart="true"-->
+                        <!--                                android:paddingTop="5dp"-->
+                        <!--                                android:paddingBottom="5dp"-->
+                        <!--                                android:paddingStart="15dp"-->
+                        <!--                                android:paddingEnd="15dp"-->
+                        <!--                                android:text="1"-->
+                        <!--                                android:textAlignment="center"-->
+                        <!--                                android:textColor="#FFFFFF"-->
+                        <!--                                android:textAllCaps="false"-->
+                        <!--                                android:textSize="18sp" />-->
+
+                        <!--                        </com.google.android.material.card.MaterialCardView>-->
+
+
+
+
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

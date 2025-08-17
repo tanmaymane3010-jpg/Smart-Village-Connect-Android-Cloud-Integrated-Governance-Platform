@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SignUp">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/register_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:padding="50dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/block_box"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:helperTextEnabled="true"
+                    app:endIconMode="dropdown_menu"
+                    app:helperTextTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_my_location">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txt_block"
+                        android:layout_width="match_parent"
+                        android:hint="Block"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/village_box"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/block_box"
+                    app:helperTextEnabled="true"
+                    app:endIconMode="dropdown_menu"
+                    app:helperTextTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_my_location">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txt_village"
+                        android:layout_width="match_parent"
+                        android:hint="Village"
+                        android:layout_height="wrap_content"
+                        android:inputType="textAutoComplete" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ward_box"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/village_box"
+                    app:helperTextEnabled="true"
+                    app:endIconMode="dropdown_menu"
+                    app:helperTextTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_my_location">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/txt_ward"
+                        android:layout_width="match_parent"
+                        android:hint="Ward"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name_box"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ward_box"
+                    android:hint="Name"
+                    app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_box"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name_box"
+                    android:layout_marginTop="20dp"
+                    android:hint="Email"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password_box"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email_box"
+                    android:layout_marginTop="20dp"
+                    android:hint="Password"
+                    app:endIconMode="password_toggle"
+                    app:helperTextEnabled="true"
+                    app:helperTextTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/confirm_password_box"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/password_box"
+                    android:layout_marginTop="20dp"
+                    android:hint="Confirm Password"
+                    app:helperTextEnabled="true"
+                    app:endIconMode="password_toggle"
+                    app:helperTextTextColor="@color/black"
+                    app:startIconDrawable="@drawable/ic_password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/register_button"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/confirm_password_box"
+
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="15dp"
+                    android:text="Register" />
+
+                <!--                android:onClick="register"-->
+
+
+                <Button
+                    android:id="@+id/go_to_login"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/register_button"
+
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:text="Already have an account, login now"
+                    android:textAllCaps="false" />
+
+                <!--                android:onClick="goToLogin"-->
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</ScrollView>
